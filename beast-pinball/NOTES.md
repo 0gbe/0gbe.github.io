@@ -33,7 +33,7 @@ Art: the user's (@_0gbe) four 3D vinyl-toy characters. Style = soft studio rende
 ## Bonus table "The Void"
 Triggered when score ≥ threshold (250K, 1M, 2.5M, 5M, 8M, then +4M). Only fires when exactly one ball is in normal
 play on the main table (never mid-multiball / ramp / scoop). Hypno-spiral teleport transition (from HYPNO's glasses).
-60 s countdown (DMD + big on-table number + ring). Ring of 6 bumpers around a giant eye "core" bumper that watches the
+19 s countdown (was 60 s in the first build; shortened at Ogbe's request) (DMD + big on-table number + ring). Ring of 6 bumpers around a giant eye "core" bumper that watches the
 ball, 12 golden eyes (one pink super eye). Drains on the bonus table are free (ball re-served from the top). 2x scoring.
 Return: same transition, ball appears in the eye scoop and is kicked out with a 6 s ball save. Next threshold is at
 least +250K above the current score so you can't chain teleports.
@@ -76,7 +76,7 @@ Pages on a project repo). The game lives in the folder `beast-pinball/` of that 
 
 **Daily update procedure**
 1. Edit the dev source in `/workspace/eyeball-pinball` (split js/*.js, css/, assets/), run the tests.
-2. Rebuild `publish-copy/`: `python3 tools/build-assets-data.py`, concatenate js in this order: assets-data, physics,
+2. Rebuild `publish-copy/` with `python3 tools/build-publish.py` (does all of this): `python3 tools/build-assets-data.py`, concatenate js in this order: assets-data, physics,
    tables, eyeball, dmd, audio, scores, render, game → `js/beast-pinball.js`; inline css/style.css into index.html;
    keep `js/config.js` separate (Supabase keys). No og:image (binary PNGs can't be pushed).
 3. Re-test publish-copy in headless Chromium from a `/beast-pinball/` sub-path (0 console errors, sprites load).

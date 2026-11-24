@@ -1133,7 +1133,7 @@ window.BEAST_ASSETS = {
       score: 0, ballNum: 1, extraBalls: 0, bonusMult: 1, lanesLit: [false, false, false], inlanes: { L: false, R: false },
       kickbackLit: true, charsLit: [false, false, false, false], multiballLit: false, multiballActive: false, jackpotLit: false, superLit: false, jackpots: 0,
       missionLit: false, missionIdx: 0, mission: null, missionsDone: [false, false, false, false], missionRound: 0, beastLeft: 0,
-      comboN: 0, lastShot: -9, nextBonusAt: nextLadder(0), bonusCount: 0, bonusLeft: 0, bonusDuration: 60,
+      comboN: 0, lastShot: -9, nextBonusAt: nextLadder(0), bonusCount: 0, bonusLeft: 0, bonusDuration: 19,
       tiltMeter: 0, tiltWarn: 0, tilted: false, serveQueue: 0, ballSaveUntil: 0, savePending: true, skillActive: false, skillLane: 0,
       ballStats: newBallStats(), dropResetAt: 0, rampCount: 0, giFlash: 0, trans: null, endBallAt: 0, tableName: 'main', gameTime: 0,
     });
@@ -1328,7 +1328,7 @@ window.BEAST_ASSETS = {
       for (const e of G.tables.bonus.def.eyes) { e.alive = true; e.respawn = 0; }
       G.tables.bonus.world.balls = []; serveBonusBall();
       for (const f of Object.values(G.tables.bonus.def.flippers)) f.enabled = !G.tilted;
-      G.msg('THE VOID', '60 SECONDS - 2X SCORE', 2.5, { now: true }); AU.startMusic('bonus'); AU.callout('Welcome to the void');
+      G.msg('THE VOID', '19 SECONDS - 2X SCORE', 2.5, { now: true }); AU.startMusic('bonus'); AU.callout('Welcome to the void');
       G.dmdColor = [255, 200, 40];
     });
   }
@@ -1528,7 +1528,7 @@ window.BEAST_ASSETS = {
     }
     if (G.mode === 'attract' || G.mode === 'over') {
       const page = Math.floor(t / 3.5) % 5;
-      if (page === 0) { d.center('BEAST', 1, 2, 3); d.center('P I N B A L L', 19, 1, 2); for (let i = 0; i < 10; i++) d.px(Math.random() * 128, Math.random() * 32, 2); }
+      if (page === 0) { d.center('BEAST', 0, 2, 3); d.center('P I N B A L L', 15, 1, 2); d.center('BY OGBE', 24, 1, 3); for (let i = 0; i < 10; i++) d.px(Math.random() * 128, Math.random() * 32, 2); }
       else if (page === 1) { d.center('PRESS START', 5, 1, Math.floor(t * 3) % 2 ? 3 : 1); d.center('SPACE / TAP PLAY', 19, 1, 2); }
       else if (page === 2) {
         d.center('HIGH SCORES', 0, 1, 3);
