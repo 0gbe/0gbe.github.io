@@ -1,5 +1,8 @@
 # Changelog
 
+## v1.2 — 2026-11-23
+* Removed the art credits that named Ogbe as the artist (title screen, playfield apron, dot-matrix attract page, page description, README). The game credit "by Ogbe" stays.
+
 ## v1.1 — 2026-11-23
 * The Void bonus round now lasts 19 seconds (was 60). Countdown, ring and DMD timer match; 6 s ball save on return kept.
 * Title screen shows "Beast PinBall" with "by Ogbe" underneath; dot-matrix attract mode shows "BY OGBE".

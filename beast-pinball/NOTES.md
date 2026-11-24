@@ -1,7 +1,7 @@
 # Beast PinBall — design notes
 
 Title: **Beast PinBall**. Repo will be `0gbe/beast-pinball`, served at https://0gbe.github.io/beast-pinball/.
-Art: the user's (@_0gbe) four 3D vinyl-toy characters. Style = soft studio render, toy-like, glossy.
+Art: four 3D vinyl-toy characters (Ogbe's NFTs; Ogbe is not the artist, so never credit the art to him). Style = soft studio render, toy-like, glossy.
 
 ## Pillars
 1. **It never gets stuck.** Reliability beats everything.

@@ -1,6 +1,6 @@
 # Beast PinBall
 
-A browser pinball game by **Ogbe (@_0gbe)**, starring the vinyl-toy crew and an eyeball for a ball.
+A browser pinball game by **Ogbe**, starring the vinyl-toy crew and an eyeball for a ball.
 
 **Play:** https://0gbe.github.io/beast-pinball/  (published from the `beast-pinball/` folder of 0gbe/0gbe.github.io)
 
